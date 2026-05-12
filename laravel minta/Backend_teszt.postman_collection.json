@@ -1,0 +1,107 @@
+{
+  "info": {
+    "_postman_id": "be6a6cb0-a1b0-49ef-876f-9d9073545a73",
+    "name": "Backend_teszt",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52694377",
+    "_collection_link": "https://go.postman.co/collection/52694377-be6a6cb0-a1b0-49ef-876f-9d9073545a73?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "6. Feladat",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/ingatlan",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "ingatlan"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "7. Feladat",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n\"kategoria\": 2, \r\n\"leiras\": \"Eladó ...\", \r\n\"hirdetesDatuma\": \"2022-03-19\", \r\n\"tehermentes\": true, \r\n\"ar\": 45000000,\r\n\"kepUrl\": \"https://pictures.com/apartman.jpg\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/ingatlan",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "ingatlan"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "8. Feladat",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n\"kategoria\": 2, \r\n\"leiras\": \"Eladó ...\", \r\n\"hirdetesDatuma\": \"2022-03-19\", \r\n\"tehermentes\": true, \r\n\"ar\": 45000000,\r\n\"kepUrl\": \"https://pictures.com/apartman.jpg\"\r\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/ingatlan/8",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "ingatlan",
+            "8"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
